@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Imc</title>
+</head>
+<body>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <main id="container">
+        <section id="img">
+            <img src="assets/images/illustration.svg" alt="">
+        </section>
+
+        <section id="calculator">
+            <form id="form">
+                <h1 id="title">
+                    Calculadora de IMC
+                </h1>
+
+                <div class="input-box">
+                    <label for="weight">Peso em Kg</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-scale"></i>
+                        <input type="number" id="weight" required>
+                        <span>Kg</span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">Altura em metros</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" id="height" required>
+                        <span>M</span>
+                    </div>
+                </div>
+
+                <button id="calculate">
+                    Calcular!
+                </button>
+
+                <div id="infos" class="hidden">
+                    <div id="result">
+                        <div id="bmi">
+                            <span id="value">20.3</span>
+                            <span>Seu imc </span>
+                        </div>
+
+                        <div id="description">
+                            <span>Normal</span>
+                        </div>
+                    </div>
+
+                    <div id="more-info" >
+                        <a href="https://brasilescola.uol.com.br/educacao-fisica/Indice-massa-corporal-imc.htm">Mais infos sobre IMC</a>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
