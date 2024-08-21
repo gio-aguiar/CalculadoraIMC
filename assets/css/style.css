@@ -159,3 +159,34 @@ body {
 .hidden{
     display: none;
 }
+
+@media screen and (max-width: 985px){
+    #container{
+    flex-direction: column-reverse; 
+    }
+}
+
+@media screen and (max-width: 515px){
+    #img img {
+        display: none;
+    }
+
+    #calculator {
+        width: auto;
+        margin-top: 50px;
+    }
+
+    #title{
+        font-size: 1.5rem;
+    }
+
+    .input-box label{
+        font-size: 1rem;
+    }
+    
+    .input-field span, .input-field i {
+        font-size: 1rem;
+        padding: 0.6rem 0.1rem;
+    }
+
+}
